@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="main.css">
+</head>
+<html>
+    <div id="header">
+<h1>Bassoon Reed-Making Survey</h1>
+    <p id="description">Please take this short survey about your experience making bassoon reeds</p>
+    </div>
+    <hr>
+    <div id='form'>
+    <form id="survey-form" action="/submit your information here">
+    <p>Please enter the following infomation:</p>
+    <p>Name: <input id='name' type='text' placeholder='First and Last Name' required></p>
+    <p>e-mail address: <input id='email' type='email' placeholder='user@provider.com' required></p>
+        <p>What grade are you in? <input id='number' type='number' min='1' max='12' placeholder='ex. 12'></p>
+    <p>Have you done any reedmaking? 
+        <select>
+            <option>Yes</option>
+            <option>No</option>
+        </select>   
+        </p>
+        <p>For how long have you been making your own reeds?</p>
+        <div class='container'><label for="none"> 
+  <input id="none" type="radio" name="years making">I have never made my own reeds
+</label>
+       <label for="0-2"> 
+  <input id="0-2" type="radio" name="years making">Less than 2 years
+</label>
+       <label for="3-4"> 
+  <input id="3-4" type="radio" name="years making">3-4 Years
+</label>
+       <label for="5+"> 
+  <input id="5+" type="radio" name="years making">More than 5 years
+</label>
+        </div>
+       <p>What reed tools do you currently own?</p>
+        <div class='container'>
+    <label>
+        <input id='knife' name='tools' type='checkbox'>Knife
+        </label><label>
+        <input id='holding' name='tools' type='checkbox'>Holding Mandrel
+        </label><label>
+        <input id='forming' name='tools' type='checkbox'>Forming Mandrel
+        </label><label>
+        <input id='plaque' name='tools' type='checkbox'>Plaque
+        </label><label>
+        <input id='pliers' name='tools' type='checkbox'>Pliers
+        </label><label>
+        <input id='files' name='tools' type='checkbox'>Files
+        </label><label>
+        <input id='wire' name='tools' type='checkbox'>Wire
+        </label><label>
+        <input id='thread' name='tools' type='checkbox'>Thread
+        </label>
+        </div>
+    <p>Please provide any additional comments below:</p>
+    <textarea id='additional'></textarea>>
+    <p><button type="submit">Complete Survey</button></p>
+    </form>
+    </div>
+        </html>
