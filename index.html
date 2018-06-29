@@ -1,63 +1,80 @@
 <!DOCTYPE html>
-<script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js></script>
+<script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
 <head>
     <link rel="stylesheet" href="main.css">
 </head>
 <html>
-    <div id="header">
-<h1>Bassoon Reed-Making Survey</h1>
-    <p id="description">Please take this short survey about your experience making bassoon reeds</p>
-    </div>
-    <hr>
-    <div id='form'>
-    <form id="survey-form" action="/submit your information here">
+<div id="header">
+<h1 id='title'>Bassoon Reed-Making Survey</h1>
+<p id="description">Please take this short survey about your experience making bassoon reeds</p>
+</div>
+<hr>
+<div id='form'>
+<form id="survey-form" action="/submit your information here">
     <p>Please enter the following infomation:</p>
-    <p>Name: <input id='name' type='text' placeholder='First and Last Name' required></p>
-    <p>e-mail address: <input id='email' type='email' placeholder='user@provider.com' required></p>
-        <p>What grade are you in? <input id='number' type='number' min='1' max='12' placeholder='ex. 12'></p>
+ <div id="input fields">
+  <p>Name: 
+        <label id="name-label">
+            <input id='name' type='text' placeholder='First and Last Name' required>
+        </label>
+    </p>
+    <p>e-mail address: 
+        <label id="email-label">
+            <input id='email' type='email' placeholder='user@provider.com' required>
+        </label>
+    </p>
+    <p>What grade are you in? 
+        <label id="number-label">
+            <input id='number' type='number' min='1' max='12' placeholder='ex. 12'>
+        </label>
+    </p>
+</div> 
+<div id='dropper'>
     <p>Have you done any reedmaking? 
-        <select>
+        <select id="dropdown">
             <option>Yes</option>
             <option>No</option>
         </select>   
-        </p>
-        <p>For how long have you been making your own reeds?</p>
-        <div class='container'><label for="none"> 
-  <input id="none" type="radio" name="years making">I have never made my own reeds
-</label>
-       <label for="0-2"> 
-  <input id="0-2" type="radio" name="years making">Less than 2 years
-</label>
-       <label for="3-4"> 
-  <input id="3-4" type="radio" name="years making">3-4 Years
-</label>
-       <label for="5+"> 
-  <input id="5+" type="radio" name="years making">More than 5 years
-</label>
-        </div>
+    </p>
+</div>
+<div id='radios' class='container'>
+    <p>For how long have you been making your own reeds?</p>
+    <label for="none"> 
+        <input id="none" type="radio" name="years" value='0'>I have never made my own reeds
+    </label>
+    <label for="0-2"> 
+        <input id="0-2" type="radio" name="years" value='1'>Less than 2 years
+    </label>
+    <label for="3-4"> 
+        <input id="3-4" type="radio" name="years" value='2'>3-4 Years
+    </label>
+    <label for="5+"> 
+        <input id="5+" type="radio" name="years" value='3'>More than 5 years
+    </label>
+</div>
        <p>What reed tools do you currently own?</p>
         <div class='container'>
     <label>
-        <input id='knife' name='tools' type='checkbox'>Knife
+        <input id='knife' name='tools' type='checkbox' value='0'>Knife
         </label><label>
-        <input id='holding' name='tools' type='checkbox'>Holding Mandrel
+        <input id='holding' name='tools' type='checkbox' value='1'>Holding Mandrel
         </label><label>
-        <input id='forming' name='tools' type='checkbox'>Forming Mandrel
+        <input id='forming' name='tools' type='checkbox' value='2'>Forming Mandrel
         </label><label>
-        <input id='plaque' name='tools' type='checkbox'>Plaque
+        <input id='plaque' name='tools' type='checkbox' value='3'>Plaque
         </label><label>
-        <input id='pliers' name='tools' type='checkbox'>Pliers
+        <input id='pliers' name='tools' type='checkbox' value='4'>Pliers
         </label><label>
-        <input id='files' name='tools' type='checkbox'>Files
+        <input id='files' name='tools' type='checkbox' value='5'>Files
         </label><label>
-        <input id='wire' name='tools' type='checkbox'>Wire
+        <input id='wire' name='tools' type='checkbox' value='6'>Wire
         </label><label>
-        <input id='thread' name='tools' type='checkbox'>Thread
+        <input id='thread' name='tools' type='checkbox' value='7'>Thread
         </label>
         </div>
     <p>Please provide any additional comments below:</p>
     <textarea id='additional'></textarea>>
-    <p><button type="submit">Complete Survey</button></p>
+    <p><button id='submit' type="submit">Complete Survey</button></p>
     </form>
     </div>
         </html>
